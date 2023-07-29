@@ -7,15 +7,8 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 )
 
-col1, col2, col3 = st.sidebar.columns(3)
-
-with col1:
-    st.write('')
-with col2:
-    image_url = "marca_cesar_school.png"
-    st.image(image_url, use_column_width=True)
-with col3:
-    st.write('')
+imagem = "marca_cesar_school.png"
+st.sidebar.image(imagem, use_column_width=False, width=100)
 
 st.header("💡 Insights")
     
