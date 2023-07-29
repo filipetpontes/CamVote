@@ -7,7 +7,7 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 )
 
-col1, col2, col3 = st.columns([40, 15, 40])
+col1, col2, col3 = st.sidebar.columns(3)
 
 with col1:
     st.write('')
