@@ -13,7 +13,7 @@ df = pd.read_excel('camara_deputados_votacoes_nominais_2023.xlsx', header=[0, 1]
 parlamentares = sorted(df['Votação', 'Parlamentar'].unique())
 partidos_unicos = sorted(df['Unnamed: 0_level_0', 'Partido'].unique())
 
-col1, col2, col3 = st.columns([40, 15, 40])
+col1, col2, col3 = st.sidebar.columns(3)
 
 with col1:
     st.write('')
