@@ -13,15 +13,8 @@ df = pd.read_excel('camara_deputados_votacoes_nominais_2023.xlsx', header=[0, 1]
 parlamentares = sorted(df['Votação', 'Parlamentar'].unique())
 partidos_unicos = sorted(df['Unnamed: 0_level_0', 'Partido'].unique())
 
-col1, col2, col3 = st.sidebar.columns(3)
-
-with col1:
-    st.write('')
-with col2:
-    image_url = "marca_cesar_school.png"
-    st.image(image_url, use_column_width=True)
-with col3:
-    st.write('')
+imagem = "marca_cesar_school.png"
+st.sidebar.image(imagem, use_column_width=False, width=100)
 
 st.markdown(
 "<h2 style='text-align: center; background-color: #307c5c; color: white; padding: 16px;'>Votações Nominais na Câmara dos Deputados - 2023</h2>",
